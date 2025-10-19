@@ -1,0 +1,27 @@
+Data Collection and Storage
+
+ARG does not collect or store data automatically upon being added to a guild. Data collection begins only when specific commands or configurations are initiated by a guild moderator. The following data may be stored:
+
+    Moderation Module:
+        Channel IDs, member IDs, role IDs, and guild IDs are stored when moderators use commands like warn, mute, or configure settings.
+        Member IDs are stored when a member is warned or blacklisted.
+        Data related to a member is automatically removed when they leave the guild.
+        Moderators can manually remove stored configurations using the appropriate commands. Run the config help command for details on managing configurations.
+
+    Tags Module:
+        When a tag is created, ARG stores the tag name, content, and guild ID.
+        Tags can be deleted using the deletetag command.
+
+    Starboard Module:
+        When the starboard module is enabled, ARG stores the channel ID designated for the starboard.
+
+    Server Utility Commands:
+        When server utility commands (e.g., locking emojis) are used, ARG stores the relevant emoji IDs.
+
+No data is collected or stored unless explicitly configured by a guild moderator.
+Data Privacy
+
+All data collected by ARG is used solely for the bot’s functionality and is accessible only to the bot’s developer. Data is not shared with any third parties.
+Data Removal
+
+    Member-specific data is automatically deleted when a member leaves the guild.
